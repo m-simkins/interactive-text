@@ -19,4 +19,17 @@ printButton.addEventListener("click", () => {
 });
 
 const section3 = document.querySelector("#section-3");
+const revealButton = document.querySelector("#reveal-button");
+const secretText = Array.from(document.querySelectorAll(".secret-text"));
 
+revealButton.addEventListener("mousedown", () => {
+    for (let textGroup of secretText) {
+        textGroup.style.display = "inline";
+    }
+});
+
+window.addEventListener("mouseup", () => {
+    for (let textGroup of secretText) {
+        textGroup.style.display = "none";
+    }
+});

@@ -24,3 +24,7 @@ body {
     color: var(--text-light);
     font-family: sans-serif;
 }
+
+.secret-text {
+    display: none;
+}
